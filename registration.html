@@ -171,17 +171,19 @@
     </div>
 
     <div class="registration-container">
+        
         <div class="form-header">
             <h1>Student Registration 2024-25</h1>
             <p>Adasrh Vidhya Niketan Sr. Sec. School, Pilani</p>
         </div>
 
-        <form id="registrationForm" onsubmit="return validateForm(event)">
+        <form action="https://api.web3forms.com/submit" method="POST">
             <!-- Academic Information -->
             <div class="form-section">
-                <h2 class="section-title">Academic Information</h2>
+                <h2 class="section-title">Academic Information</h2> 
                 
                 <div class="form-group">
+                    <input type="hidden" name="access_key" value="3dfa8a3d-5ce8-4501-872f-d775d9182c62">
                     <label class="required">Class in which seeking admission</label>
                     <select name="admissionClass" required>
                         <option value="">Select Class</option>
