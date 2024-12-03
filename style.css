@@ -2505,3 +2505,64 @@
     padding: auto;
     background-color: #ffffff00;
 }
+
+.mobile-nav-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: var(--gradient-nav);
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+.mobile-nav-items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    padding: 0 10px;
+}
+
+.mobile-nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    font-size: 0.75rem;
+    padding: 5px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.more-dropdown {
+    display: none; /* Initially hidden */
+    position: absolute; /* Position it absolutely */
+    bottom: 60px; /* Position above the nav bar */
+    left: 0;
+    width: 100%;
+    background: var(--gradient-nav);
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    z-index: 1000; /* Ensure it appears above other elements */
+}
+
+.more-dropdown a {
+    padding: 10px;
+    color: white;
+    text-align: center;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    gap: 10px; /* Space between icon and text */
+}
+
+.more-dropdown a:hover {
+    background: rgba(255, 255, 255, 0.1); /* Highlight on hover */
+}

@@ -366,17 +366,30 @@
                     <i class="fas fa-phone"></i>
                     <span>Contact</span>
                 </a>
-                <a href="#more" class="mobile-nav-item">
+                <a href="#more" class="mobile-nav-item more-button" onclick="toggleMore()">
                     <i class="fas fa-ellipsis-h"></i>
                     <span>More</span>
                 </a>
-                <!-- <a href="#" class="mobile-nav-item menu-toggle">
-                    <i class="fas fa-bars"></i>
-                    <span>Menu</span>
-                </a> -->
+                <!-- Added new links for Academics and Facilities under More -->
+                <div class="more-dropdown" id="moreDropdown" style="display: none;">
+                    <a href="academics.html" class="mobile-nav-item">
+                        <i class="fas fa-book"></i>
+                        <span>Academics</span>
+                    </a>
+                    <a href="#facilities" class="mobile-nav-item">
+                        <i class="fas fa-building"></i>
+                        <span>Facilities</span>
+                    </a>
+                </div>
             </div>
         </nav>
-        
+
+        <script>
+            function toggleMore() {
+                const dropdown = document.getElementById('moreDropdown');
+                dropdown.style.display = dropdown.style.display === 'none' || dropdown.style.display === '' ? 'flex' : 'none';
+            }
+        </script>
 
        <div></div>
 
