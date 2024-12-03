@@ -1,0 +1,132 @@
+body {
+    background-image: url('./images/schoolbg.jpg'); /* Replace with your image path */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-attachment: fixed; /* Make the background fixed */
+    min-height: 100vh; /* Ensure the body takes at least the full height of the viewport */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333; /* Default text color */
+}
+
+.header {
+    background-image: url('./path/to/your/header-background-image.jpg'); /* Replace with your header image path */
+    background-size: cover; /* Cover the header area */
+    background-position: center; /* Center the image */
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    background-color: #00000075;
+}
+
+.back-button-container {
+    display: flex; /* Use flexbox for centering */
+    justify-content: left; /* Center horizontally */
+    margin: 20px 0; /* Add some margin above and below */
+}
+
+.back-button {
+    display: inline-block; /* Make the link behave like a button */
+    padding: 10px ; /* Add padding for better click area */
+    right: auto;
+    background-color: #1e3c72; /* Background color */
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.back-button:hover {
+    background-color: #1a2a4d; /* Darker background on hover */
+}
+
+.nav {
+    margin: 20px 0;
+}
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Use flexbox for horizontal alignment */
+    justify-content: center; /* Center the buttons */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.nav ul li {
+    margin: 12px; /* Increased margin for better spacing between buttons */
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px; /* Increased padding for a more modern look */
+    border-radius: 50px;
+    transition: background-color 0.3s, transform 0.2s;
+    background-color: #085cdaa2; /* Button background color */
+}
+
+.nav a:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.main-content {
+    padding: 20px;
+    
+}
+
+.section {
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    border-radius: 18px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.section h2 {
+    color: #007bff;
+    border-bottom: 2px solid #007bff; /* Underline effect */
+    padding-bottom: 10px;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 123, 255, 0.9); /* Semi-transparent background */
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    .nav ul {
+        flex-direction: column; /* Stack buttons vertically on small screens */
+        align-items: center; /* Center buttons */
+    }
+
+    .nav ul li {
+        margin: 15px 0; /* Adjust margin for vertical spacing */
+    }
+}
+
+.explore-button {
+    display: inline-block; /* Make it a block element for padding */
+    color: white; /* Text color */
+    background-color: #007bffb7; /* Button background color */
+    padding: 10px 20px; /* Padding for the button */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+.explore-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
