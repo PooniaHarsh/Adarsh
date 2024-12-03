@@ -14,23 +14,20 @@
         <a href="index.html" class="back-button">← Back to Home</a>
     </div> -->
    
-    <!-- <div style="background: #19408a; padding: 15px; text-align: center;">
-        <a href="index.html" style="color: white; text-decoration: none; font-size: 16px;">
-            <i class="fas fa-arrow-left"></i> Back to Home
-        </a>
-    </div> -->
-
     <header class="header">
         <h1>Academics at Adarsh Vidhya Niketan</h1>
-        <nav class="nav">
-            <ul>
-                <li><a href="#ethos" class="button">Our Ethos</a></li>
-                <li><a href="#knowledge-resource-center" class="button">Knowledge Resource Center</a></li>
-                <li><a href="#curriculum-syllabus" class="button">Curriculum & Syllabus</a></li>
-                <li><a href="#prizes-awards" class="button">Prizes and Awards</a></li>
-            </ul>
-        </nav>
     </header>
+
+    <!-- Desktop Navigation Bar -->
+    <nav class="desktop-nav">
+        <ul class="nav-menu">
+            <li><a href="#ethos" class="nav-link">Our Ethos</a></li>
+            <li><a href="#knowledge-resource-center" class="nav-link">Knowledge Resource Center</a></li>
+            <li><a href="#curriculum-syllabus" class="nav-link">Curriculum</a></li>
+            <li><a href="#prizes-awards" class="nav-link">Prizes</a></li>
+            <li><a href="#faculty" class="nav-link">Faculty</a></li>
+        </ul>
+    </nav>
 
     <main class="main-content">
         <!-- Ethos Section -->
@@ -62,11 +59,51 @@
         </section>
     </main>
 
+    <nav class="mobile-nav-bar">
+        <div class="mobile-nav-items">
+            <a href="#ethos" class="mobile-nav-item">
+                <i class="fas fa-book"></i>
+                <span>Our Ethos</span>
+            </a>
+            <a href="#knowledge-resource-center" class="mobile-nav-item">
+                <i class="fas fa-book-open"></i>
+                <span> Resource Center</span>
+            </a>
+            <a href="#curriculum-syllabus" class="mobile-nav-item">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Curriculum</span>
+            </a>
+            <a href="#prizes-awards" class="mobile-nav-item">
+                <i class="fas fa-trophy"></i>
+                <span>Prizes</span>
+            </a>
+            <a href="#faculty" class="mobile-nav-item more-button" onclick="toggleMore()">
+                <i class="fas fa-chalkboard-teacher"></i>
+                <span>Faculty</span>
+            </a>
+            <div class="more-dropdown" id="moreDropdown" style="display: none;">
+                <a href="#technicalfaculty" class="mobile-nav-item">
+                    <i class="fas fa-book"></i>
+                    <span>Technical Faculty</span>
+                </a>
+                <a href="#administrativefaculty" class="mobile-nav-item">
+                    <i class="fas fa-building"></i>
+                    <span>Administrative Faculty</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
     <footer class="footer">
         <p>&copy; 2023 Adarsh Vidhya Niketan. All rights reserved.</p>
     </footer>
 
-    <script src="./script.js"></script>
+    <script>
+        function toggleMore() {
+            const dropdown = document.getElementById('moreDropdown');
+            dropdown.style.display = dropdown.style.display === 'none' || dropdown.style.display === '' ? 'flex' : 'none';
+        }
+    </script>
 </body>
 
 </html>
