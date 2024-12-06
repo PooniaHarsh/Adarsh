@@ -54,6 +54,8 @@ body {
     z-index: 1000; /* Ensure it appears above other content */
 }
 
+
+
 .hamburger {
     display: block; /* Show hamburger on mobile */
     cursor: pointer; /* Pointer cursor for better UX */
@@ -78,6 +80,7 @@ body {
 #nav-links li {
     margin: 10px 0; /* Space between links */
 }
+
 
 .nav ul {
     list-style: none;
@@ -217,6 +220,8 @@ body {
     z-index: 1000; /* Ensure it appears above other content */
 }
 
+
+
 .more-dropdown a {
     padding: 10px; /* Padding for dropdown items */
     color: white; /* Text color */
@@ -242,6 +247,8 @@ body {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.555);
 }
 
+
+
 .nav-menu {
     display: flex; /* Use flexbox for horizontal alignment */
     justify-content: space-around; /* Space items evenly */
@@ -258,4 +265,28 @@ body {
 .nav-link:hover {
     background: rgba(255, 255, 255, 0.1); /* Highlight on hover */
     border-radius: 5px; /* Rounded corners on hover */
+}
+
+.faculty-dropdown {
+    display: none; /* Hide dropdown by default */
+    right: 5px;
+   padding-right: 5px;
+   padding-top: 52px;
+  
+    position: absolute; /* Position it absolutely */
+    background-color: rgba(28, 43, 70, 0.849); /* Match the nav background */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.555); /* Add shadow for depth */
+    z-index: 1000; /* Ensure it appears above other content */
+}
+
+.faculty-dropdown li {
+    margin: 0; /* Remove margin for dropdown items */
+    
+}
+
+/* Show dropdown when parent is hovered */
+.desktop-nav li:hover .faculty-dropdown {
+    display: block; /* Show dropdown on hover */
+    padding: 5px;
+    padding-bottom: 9px;
 }

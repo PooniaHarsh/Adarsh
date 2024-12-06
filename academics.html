@@ -25,7 +25,14 @@
             <li><a href="#knowledge-resource-center" class="nav-link">Knowledge Resource Center</a></li>
             <li><a href="#curriculum-syllabus" class="nav-link">Curriculum</a></li>
             <li><a href="#prizes-awards" class="nav-link">Prizes</a></li>
-            <li><a href="#faculty" class="nav-link">Faculty</a></li>
+            <li>
+                <a href="#" class="nav-link" onclick="toggleFacultyDropdown()">Faculty</a>
+                <ul class="faculty-dropdown" id="facultyDropdown">
+                    <li><a href="techfaculty.html" class="nav-link">Technical Faculty</a></li>
+                    <li><a href="#administrativefaculty" class="nav-link">Administrative Faculty</a></li>
+                </ul>
+            </li>
+            
         </ul>
     </nav>
 
@@ -82,7 +89,7 @@
                 <span>Faculty</span>
             </a>
             <div class="more-dropdown" id="moreDropdown" style="display: none;">
-                <a href="#technicalfaculty" class="mobile-nav-item">
+                <a href="techfaculty.html" class="mobile-nav-item">
                     <i class="fas fa-book"></i>
                     <span>Technical Faculty</span>
                 </a>
@@ -102,6 +109,11 @@
         function toggleMore() {
             const dropdown = document.getElementById('moreDropdown');
             dropdown.style.display = dropdown.style.display === 'none' || dropdown.style.display === '' ? 'flex' : 'none';
+        }
+
+        function toggleFacultyDropdown() {
+            const dropdown = document.getElementById('facultyDropdown');
+            dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
         }
     </script>
 </body>

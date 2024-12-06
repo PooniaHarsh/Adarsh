@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Faculty - Adarsh Vidhya Niketan</title>
+    <link rel="stylesheet" href="techfaculty.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="back-button-container"></div>
+        <a href="index.html" class="back-button">← Back to Home</a>
+    </div>
+    <header class="header">
+        <h1>Technical Faculty at Adarsh Vidhya Niketan</h1>
+    </header>
+
+    <!-- Image Slider -->
+    <div class="slider">
+        <div class="slides">
+            <div class="slide"><img src="./images/staff.JPG" alt="Technical Faculty Image 1"></div>
+            <div class="slide"><img src="./images/staff1.JPG" alt="Technical Faculty Image 2"></div>
+            <div class="slide"><img src="./images/staff2.JPG" alt="Technical Faculty Image 3"></div>
+        </div>
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+
+    
+
+        <!-- Dropdown Section for Subject Teachers -->
+        <section class="dropdown-section">
+            <h2>Subject Teachers</h2>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="toggleDropdown('hindiDropdown')">Hindi Teachers</button>
+                <div id="hindiDropdown" class="dropdown-content">
+                    <div class="faculty-member">
+                        <img src="./images/sir1.jpg" alt="Hindi Teacher 1">
+                        <div>
+                            <h3>Mrs. Aarti Sharma</h3>
+                            <p>Expert in Hindi Literature with a passion for teaching.</p>
+                        </div>
+                    </div>
+                    <div class="faculty-member">
+                        <img src="./images/sir2.jpg" alt="Hindi Teacher 2">
+                        <div>
+                            <h3>Mr. Rajesh Kumar</h3>
+                            <p>Specializes in Hindi Grammar and Composition.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn" onclick="toggleDropdown('mathDropdown')">Math Teachers</button>
+                <div id="mathDropdown" class="dropdown-content">
+                    <div class="faculty-member">
+                        <img src="./images/sir1.jpg" alt="Math Teacher 1">
+                        <div>
+                            <h3>Dr. Neha Gupta</h3>
+                            <p>Expert in Algebra and Calculus.</p>
+                        </div>
+                    </div>
+                    <div class="faculty-member">
+                        <img src="./images/sir2.jpg" alt="Math Teacher 2">
+                        <div>
+                            <h3>Mr. Suresh Verma</h3>
+                            <p>Specializes in Geometry and Statistics.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn" onclick="toggleDropdown('englishDropdown')">English Teachers</button>
+                <div id="englishDropdown" class="dropdown-content">
+                    <div class="faculty-member">
+                        <img src="./images/sir1.jpg" alt="English Teacher 1">
+                        <div>
+                            <h3>Ms. Priya Singh</h3>
+                            <p>Expert in English Literature and Language.</p>
+                        </div>
+                    </div>
+                    <div class="faculty-member">
+                        <img src="./images/sir2.jpg" alt="English Teacher 2">
+                        <div>
+                            <h3>Mr. Anil Joshi</h3>
+                            <p>Specializes in Creative Writing and Communication Skills.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+        <main class="main-content">
+            <section class="faculty-section">
+                <h2>Meet Our Technical Faculty</h2>
+                <div class="faculty-member">
+                    <img src="./images/sir1.jpg" alt="Faculty Member 1">
+                    <div>
+                        <h3>Dr. John Doe</h3>
+                        <p>Expert in Computer Science with over 10 years of experience in teaching and research.</p>
+                    </div>
+                </div>
+                <div class="faculty-member">
+                    <img src="./images/sir2.jpg" alt="Faculty Member 2">
+                    <div>
+                        <h3>Ms. Jane Smith</h3>
+                        <p>Specializes in Information Technology and has a passion for mentoring students.</p>
+                    </div>
+                </div>
+                <div class="faculty-member">
+                    <img src="./images/sir3.jpg" alt="Faculty Member 3">
+                    <div>
+                        <h3>Mr. Alan Brown</h3>
+                        <p>Experienced in Software Engineering and has worked on various industry projects.</p>
+                    </div>
+                </div>
+            </section>
+            
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2023 Adarsh Vidhya Niketan. All rights reserved.</p>
+    </footer>
+
+    <script src="techfaculty.js"></script>
+</body>
+
+</html>
