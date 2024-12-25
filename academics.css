@@ -1,0 +1,292 @@
+body {
+    background-image: url('./images/schoolbg.jpg'); /* Replace with your image path */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-attachment: fixed; /* Make the background fixed */
+    min-height: 100vh; /* Ensure the body takes at least the full height of the viewport */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333; /* Default text color */
+}
+
+.header {
+    background-image: url('./path/to/your/header-background-image.jpg'); /* Replace with your header image path */
+    background-size: cover; /* Cover the header area */
+    background-position: center; /* Center the image */
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.555);
+    background-color: #00000081;
+}
+
+.back-button-container {
+    display: flex; /* Use flexbox for centering */
+    justify-content: left; /* Center horizontally */
+    margin: 20px 0; /* Add some margin above and below */
+}
+
+.back-button {
+    display: inline-block; /* Make the link behave like a button */
+    padding: 10px ; /* Add padding for better click area */
+    right: auto;
+    background-color: #1e3c72; /* Background color */
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.back-button:hover {
+    background-color: #1a2a4d; /* Darker background on hover */
+}
+
+.nav {
+    position: fixed; /* Fix the nav to the bottom */
+    bottom: 0; /* Align it to the bottom */
+    left: 0; /* Align it to the left */
+    right: 0; /* Align it to the right */
+    background-color: rgba(0, 123, 255, 0.9); /* Background color */
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2); /* Shadow for better visibility */
+    z-index: 1000; /* Ensure it appears above other content */
+}
+
+
+
+.hamburger {
+    display: block; /* Show hamburger on mobile */
+    cursor: pointer; /* Pointer cursor for better UX */
+    padding: 10px; /* Padding for better touch area */
+}
+
+#nav-links {
+    display: none; /* Hide links by default on mobile */
+    flex-direction: column; /* Stack links vertically */
+    position: absolute; /* Position absolute for dropdown */
+    top: 60px; /* Adjust based on header height */
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 123, 255, 0.9); /* Background color */
+    z-index: 1000; /* Ensure it appears above other content */
+}
+
+#nav-links.active {
+    display: flex; /* Show links when active */
+}
+
+#nav-links li {
+    margin: 10px 0; /* Space between links */
+}
+
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Use flexbox for horizontal alignment */
+    justify-content: center; /* Center the buttons */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.nav ul li {
+    margin: 12px; /* Increased margin for better spacing between buttons */
+}
+
+.nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px; /* Increased padding for a more modern look */
+    border-radius: 50px;
+    transition: background-color 0.3s, transform 0.2s;
+    background-color: #0560e7a2; /* Button background color */
+}
+
+.nav a:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.main-content {
+    padding: 20px;
+    
+}
+
+.section {
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    border-radius: 18px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.555);
+}
+
+
+.section h2 {
+    color: #000000;
+    border-bottom: 2px solid #000000; /* Underline effect */
+    padding-bottom: 10px;
+}
+
+.footer {
+    text-align: center;
+    padding: 0%;
+    background-color: rgba(17, 65, 116, 0.397); /* Semi-transparent background */
+    color: white;
+    position: relative;
+    
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 600px) {
+    .nav ul {
+        flex-direction: row; /* Keep buttons in a row */
+        justify-content: space-around; /* Space them evenly */
+        align-items: center; /* Center items vertically */
+    }
+}
+
+.explore-button {
+    display: inline-block; /* Make it a block element for padding */
+    color: white; /* Text color */
+    background-color: #007bffb7; /* Button background color */
+    padding: 10px 20px; /* Padding for the button */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+.explore-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Mobile Navigation Styles */
+.mobile-nav-bar {
+    position: fixed; /* Fix the nav to the bottom */
+    bottom: 0; /* Align it to the bottom */
+    left: 0; /* Align it to the left */
+    right: 0; /* Align it to the right */
+    background: var(--gradient-nav); /* Use the same gradient as the index page */
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.082); /* Shadow for better visibility */
+    z-index: 1000; /* Ensure it appears above other content */
+    background: rgb(20, 30, 48);
+}
+
+.mobile-nav-items {
+    display: flex; /* Use flexbox for horizontal alignment */
+    justify-content: space-around; /* Space items evenly */
+    align-items: center; /* Center items vertically */
+    height: 60px; /* Height of the mobile nav */
+    padding: 0 10px; /* Padding for the nav */
+}
+
+.mobile-nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff; /* Text color */
+    text-decoration: none; /* Remove underline */
+    font-size: 0.75rem; /* Font size */
+    padding: 5px; /* Padding for better click area */
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    .mobile-nav-bar {
+        display: none; /* Hide mobile nav on desktop */
+    }
+}
+
+@media (max-width: 767px) {
+    .desktop-nav {
+        display: none; /* Hide desktop nav on mobile */
+    }
+}
+/* More Dropdown Styles */
+.more-dropdown {
+    display: none; /* Hide by default */
+    flex-direction: column; /* Stack links vertically */
+    position: absolute; /* Position absolute for dropdown */
+    bottom: 60px; /* Adjust based on nav height */
+    left: 0;
+    right: 0;
+    background-color: rgb(20, 41, 65); /* Background color */
+    z-index: 1000; /* Ensure it appears above other content */
+}
+
+
+
+.more-dropdown a {
+    padding: 10px; /* Padding for dropdown items */
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Faculty Section Styles */
+.faculty-section {
+    background: linear-gradient(to right, #141e30, #243b55); /* Same gradient as index page */
+    padding: 20px; /* Same padding as index page */
+    border-radius: 10px; /* Optional: Add border radius for rounded corners */
+    color: white; /* Text color for better contrast */
+    margin-bottom: 20px; /* Space between sections */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for depth */
+}
+
+/* Desktop Navigation Styles */
+.desktop-nav {
+    background: var(--gradient-nav); /* Use the same gradient as the index page */
+    padding: 10px 20px; /* Add padding for the nav */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+    background: rgba(28, 43, 70, 0.849);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.555);
+}
+
+
+
+.nav-menu {
+    display: flex; /* Use flexbox for horizontal alignment */
+    justify-content: space-around; /* Space items evenly */
+    list-style: none; /* Remove default list styling */
+}
+
+.nav-link {
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline */
+    padding: 10px 15px; /* Add padding for better click area */
+    transition: background 0.3s; /* Smooth transition for hover effect */
+}
+
+.nav-link:hover {
+    background: rgba(255, 255, 255, 0.1); /* Highlight on hover */
+    border-radius: 5px; /* Rounded corners on hover */
+}
+
+.faculty-dropdown {
+    display: none; /* Hide dropdown by default */
+    right: 5px;
+   padding-right: 5px;
+   padding-top: 52px;
+  
+    position: absolute; /* Position it absolutely */
+    background-color: rgba(28, 43, 70, 0.849); /* Match the nav background */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.555); /* Add shadow for depth */
+    z-index: 1000; /* Ensure it appears above other content */
+}
+
+.faculty-dropdown li {
+    margin: 0; /* Remove margin for dropdown items */
+    
+}
+
+/* Show dropdown when parent is hovered */
+.desktop-nav li:hover .faculty-dropdown {
+    display: block; /* Show dropdown on hover */
+    padding: 5px;
+    padding-bottom: 9px;
+}
