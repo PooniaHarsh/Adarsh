@@ -7,7 +7,7 @@
     <link rel="apple-touch-icon" href="./images/school-logo.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Adarsh Vidhya Niketan Sr. Sec. School, Pilani</title>
+    <title>Adarsh Vidya Niketan Sr. Sec. School, Pilani</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./Gallery.html">
@@ -22,15 +22,17 @@
        
         
     </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
+    <div class="snow-container"></div>
 
     <header class="header-with-background">
         <div class="logo-container">
             <img src="./images/school-logo.png" alt="Adasrh Vidhya Niketan Logo" class="school-logo">
         </div>
-        <h1 class="school-name">Adasrh Vidhya Niketan Sr. Sec. School</h1>
+        <h1 class="school-name">Adarsh Vidya Niketan Sr. Sec. School</h1>
         <p class="location">Pilani</p>
     </header>
 
@@ -397,6 +399,24 @@
         <p>&copy; 2024 Adarsh Vidhya Niketan. All rights reserved.</p>
     </footer>
 </marquee>
+
+    <script>
+        // Snow effect script
+        $(document).ready(function () {
+            const snowContainer = $('.snow-container');
+            const snowflakeCount = 100; // Number of snowflakes
+
+            for (let i = 0; i < snowflakeCount; i++) {
+                const snowflake = $('<div class="snowflake">❄</div>');
+                snowflake.css({
+                    left: Math.random() * $(window).width() + 'px',
+                    animationDuration: Math.random() * 3 + 2 + 's', // Random duration between 2s and 5s
+                    opacity: Math.random() // Random opacity
+                });
+                snowContainer.append(snowflake);
+            }
+        });
+    </script>
 
 </body>
 

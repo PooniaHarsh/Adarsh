@@ -1,4 +1,3 @@
-
         :root {
             --gradient-header: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
             --gradient-nav: linear-gradient(to right, #141e30, #243b55);
@@ -2569,4 +2568,32 @@
 
 .more-dropdown a:hover {
     background: rgba(255, 255, 255, 0.1); /* Highlight on hover */
+}
+
+/* Snow effect styles */
+.snow-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Prevent interaction with snowflakes */
+    overflow: hidden; /* Hide overflow */
+    z-index: 9999; /* Ensure it is above other content */
+}
+
+.snowflake {
+    position: absolute;
+    top: -90px; /* Start above the viewport */
+    font-size: 0.5em; /* Size of the snowflake */
+    color: white; /* Color of the snowflake */
+    animation-name: fall;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh); /* Fall to the bottom of the viewport */
+    }
 }
