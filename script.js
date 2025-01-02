@@ -500,7 +500,15 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+// ... existing code ...
 
+document.addEventListener('DOMContentLoaded', function() {
+    // Set user count (replace with dynamic value as needed)
+    const userCount = 150; // Example static value
+    document.getElementById('userCount').textContent = userCount;
+});
+
+// ... existing code ...
 
 
 

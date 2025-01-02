@@ -2597,3 +2597,13 @@
         transform: translateY(100vh); /* Fall to the bottom of the viewport */
     }
 }
+
+/* User Count Section Styles */
+#user-count {
+    background: var(--gradient-card);
+    padding: 20px;
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    margin: 20px 0;
+}
